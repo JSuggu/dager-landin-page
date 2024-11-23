@@ -3,10 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+    <link rel="icon" href="assets/images/electric-guitar-icon.png" type="img/png">
+    <link rel="stylesheet" href="assets/output.css">
+    <script src="utils/showEmail.js"></script>
     <title>Dot Dagger</title>
 </head>
-<body>
-    
+<body class="bg-gray-900">
+    <div class="flex w-screen flex-col items-center gap-28">
+        <nav class="nav flex fixed h-20 w-full items-center justify-between bg-gray-900 py-4">
+            <div class="logo-container pl-28">
+                <img class="logo w-32" src="assets/images/dot-dager-logo.png">
+            </div>
+            <div class="menu-container flex gap-8 pr-28">
+                <a href="#home" class="text-orange-400"> Home </a>
+                <a href="#about-me" class="text-orange-400"> About Me </a>
+            </div>
+        </nav>
+        <main id="home" class="flex w-full justify-center">
+            <div class="home flex w-3/5 h-screen gap-28 items-center py-20">
+                <section class="main-image-container">
+                    <img class="rounded-full" src="assets/images/dager.png" alt="Dager">
+                </section>
+                <section class="main-data flex flex-col gap-6">
+                    <h2 class="text-6xl font-bold">Bienvenido a Dot Dager</h2>
+                    <p class="text-3xl">
+                        Mi nombre es Mariano, soy un desarrollador fullstack, creador de contenido, amante de los felinos y crítico del pepino.
+                    </p>
+                </section>
+                <section class="links hidden">
+                    <div class="flex gap-6">
+                        <a href="https://www.youtube.com/@DotDager"><img src="assets/images/youtube.svg" alt="Youtube"></a>
+                        <a href="https://www.instagram.com/dager.32/"><img src="assets/images/instagram.svg" alt="Instagram"></a>
+                        <a href="https://x.com/Dager_32"><img src="assets/images/twitterx.svg" alt="Instagram"></a>
+                        <a href="https://github.com/MarianoVilla"><img src="assets/images/github.svg" alt="GitHub"></a>
+                    </div>
+                    <div class="flex">
+                        <a id="email-md" onclick="showEmailMd()"><img src="assets/images/email.svg" alt="Email"></a>
+                    </div>
+                    <div class="flex">
+                        <a class="text-orange-400" href="https://tbot.xyz/lumber/" target="_blank"> LumberJack </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="about-me-container flex flex-col w-3/5 gap-8">
+            <h2 class="font-bold text-3xl">Sobre Mi</h2>
+            <section class="about-me flex gap-8">
+                <div class="about-image-container">
+                    <img class="rounded-lg" src="assets/images/dager-pleasure.jpg" alt="Dager-Pleasure">
+                </div>
+                <div class="paragraphs flex flex-col gap-4 justify-center">
+                    <p>
+                        🔍 Un creador de contenido diferente: mezclo humor, programación, música, gatos y mi amor por los pepinos
+                        para conectar con quienes disfrutan de aprender cositas mientras se divierten.
+                    </p>
+                    <p>
+                        💻 Programación: Artista del código y creador de soluciones digitales.
+                    </p>
+                    <p>
+                        😺 Gatos: Porque no hay nada mas relajante que el ronroneo de mis compañeros felinos.
+                    </p>
+                    <p>
+                        🧠 Filosofía: Reflexiono sobre sobre cuestiones sociales y encuentra respuestas inesperadas en los pequeños detalles.
+                    </p>
+                    <p>
+                        🎸 Guitarras: Nada mejor que una guitarra para filosofar con ritmo.
+                    </p>
+                    <p>
+                        🥒 Pepinos: Enemigo público del gato, pero amigo secreto de la creatividad. 
+                    </p>
+                </div>
+            </section>
+            <p></p>
+        </div>
+        <footer id="about-me" class="footer-container flex w-full h-44 justify-center bg-gray-800 pt-2">
+            <div class="footer flex w-3/5 gap-5 justify-between">
+                <section class="social-medias">
+                    <h2>Redes Sociales</h2>
+                    <div class="flex flex-col gap-1">
+                        <a href="https://www.instagram.com/dager.32/"><img src="assets/images/instagram.svg" alt="Instagram"> Instagram </a>
+                        <a href="https://x.com/Dager_32"><img src="assets/images/twitterx.svg" alt="Instagram"> X </a>
+                        <a href="https://github.com/MarianoVilla"><img src="assets/images/github.svg" alt="GitHub"> GitHub </a>
+                        <a id="email" onclick="showEmail()"><img src="assets/images/email.svg" alt="Email"> Email </a>
+                    </div>
+                </section>
+                <section class="youtube-channels">
+                    <h2>Canales de Youtube</h2>
+                    <div class="flex flex-col gap-1">
+                        <a href="https://www.youtube.com/@DotDager"><img src="assets/images/youtube.svg" alt="Youtube"> Dot Dager </a>
+                        <a href="https://www.youtube.com/@DagerLive"><img src="assets/images/youtube.svg" alt="Youtube"> Dager Clips </a>
+                        <a href="https://www.youtube.com/c/DagerMusic"><img src="assets/images/youtube.svg" alt="Youtube"> Dager </a>
+                        <a href="https://www.youtube.com/c/DagerXIV"><img src="assets/images/youtube.svg" alt="Youtube"> El Antro de Dager </a>
+                    </div>
+                </section>
+                <section class="lumber">
+                    <h2>¿Sabias Que?</h2>
+                    <div class="flex flex-col gap-1">
+                        <p class="leading-loose">
+                            Sabias que muchos expertos consideran la heroína <br> 
+                            la cosa más adictiva del mundo. Sin embargo esto <br>
+                            no es tan acertado ya que existe algo mas adictivo.
+                        </p>
+                        <span>Lo más adictivo del mundo -><a class="text-orange-400" href="https://tbot.xyz/lumber/" target="_blank"> Click Aqui </a></span>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
